@@ -1,9 +1,6 @@
-function onClick(){
+function onClick(InputName){
 
-        document.getElementById("output").innerHTML = "why did you press me";
-        const myVaribleName = {name: "hahhhahahhahhahahhahaahahhhaahhahhahahahahahahahahhahahahahhahahahahahahahahahahhaha"};
-        console.log(myVaribleName.name);
-        const myList = [];
-        console.log(myList[0])
+        document.getElementById("output").innerHTML = "cool huh";
+        alert('Hello, ' + InputName + '!');
 }
 
