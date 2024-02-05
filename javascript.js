@@ -11,10 +11,17 @@ function onClick(InputName) {
 function addNamesToHTML(data) {
   console.log(data);
   const pokemonNames = data.results.map((pokemon) => {
+    const pokemonContainer = document.createElement("div");
+    pokemonContainer.setAttribute(
+      "style",
+      "width: 250xp; display: inline-block;"
+    );
     const h2Tag = document.createElement("h2");
-    console.log("Name with H2 tag: ", h2Tag);
-    h2Tag.innerHTML = pokemon.name;
-    return h2Tag;
+    pokemonContainer.append(h2Tag);
+    console.log("Name with H2 tag: ", pokemonContainer);
+
+  h2Tag.innerHTML = pokemon.name;
+    return pokemonContainer;
   });
   $("#output").html(pokemonNames);
 }
