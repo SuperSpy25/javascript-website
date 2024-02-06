@@ -20,7 +20,7 @@ function addNamesToHTML(data) {
     pokemonContainer.append(h2Tag);
     console.log("Name with H2 tag: ", pokemonContainer);
 
-  h2Tag.innerHTML = pokemon.name;
+    h2Tag.innerHTML = pokemon.name;
     return pokemonContainer;
   });
   $("#output").html(pokemonNames);
